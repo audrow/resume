@@ -1,4 +1,5 @@
-\documentclass[a4paper,12pt]{memoir} % Font and paper size
+\documentclass[a4paper,11pt]{memoir} % Font and paper size
+\usepackage[document]{ragged2e}
 \usepackage{hyperref}
 
 \input{structure.tex} % Include the file specifying document layout and packages
@@ -25,7 +26,7 @@ San Francisco, CA\\ % Address 2
 \href{https://github.com/audrow}{github.com/audrow} \\
 \Sep
 \href{mailto:audrow@hey.com}{audrow@hey.com} \\ % Your email address
-(860) 328-3925 \\ % Your phone number
+860-328-3925 \\ % Your phone number
 \Sep % Some whitespace
 \vfill % Whitespace under this block to push it up under the photo
 \end{flushright}
@@ -61,11 +62,11 @@ San Francisco, CA\\ % Address 2
 
 %------------------------------------------------
 
-\CVItem{2018 - 2020, University of Southern California}{MS in Computer Science---advisor: Maja Mataric}{}
+\CVItem{2018--2020, University of Southern California}{MS in Computer Science---advisor: Maja Matari\'c}{}
 
-\CVItem{2015 - 2018, University of Michigan}{MS in Electrical Engineering---advisors: David Remy and Edwin Olson}
+\CVItem{2015--2018, University of Michigan}{MS in Electrical Engineering---advisors: David Remy and Edwin Olson}
 
-\CVItem{2010 - 2014, University of North Carolina at Charlotte}{BS in Electrical Engineering---advisor: James Conrad}
+\CVItem{2010--2014, University of North Carolina at Charlotte}{BS in Electrical Engineering---advisor: James Conrad}
 
 %------------------------------------------------
 
@@ -78,30 +79,39 @@ San Francisco, CA\\ % Address 2
 \CVSection{Experience}
 
 %------------------------------------------------
-\CVItem{05/20--present, \textit{Software Engineer}, Open Robotics}{
+\CVItem{01/21--present, \textit{Software Engineer}, Open Robotics}{
 \begin{itemize}
-	\item Made core Python and C++ contributions to ROS 2.
-	\item Reviewed community contributions to ROS 2.
+	\item Made core changes to ROS~2's C++ client library, including the redesign of fundamental components to use C++17 features (from C++14)
+	\item Manage community contributions to various public repositories
+\end{itemize}
+}
+
+\CVItem{05/20--12/20, \textit{Software Engineering Intern}, Open Robotics}{
+\begin{itemize}
+	\item Solved several race conditions in ROS~2's C++ client library's multi-threaded executor
+	\item Contributed to ROS~2's C++ and Python client libraries, RQT, and ROS~2's command line interface
 \end{itemize}
 }
 
 \CVItem{05/18--12/20, \textit{Research assistant}, University of Southern California}{
 \begin{itemize}
-	\item Designed and implemented an 8-week in-home interaction using ROS 1 and Python. 
-	\item Mentored several undergraduate and master's students.
+	\item Designed and implemented an 8-week in-home interaction using ROS~1 and Python
+	% UG: Gauri, Courtney, Adam, Yang, Emily
+	% MS: Erica, Anand, Kristin
+	\item Mentored five undergraduate and three master's students
 \end{itemize}
 }
 
 \CVItem{06/19--08/19, \textit{Intern}, Halodi Robotics}{
 \begin{itemize}
-	\item Implemented a way for their humanoid robot to mirror arm motions.
+	\item Implemented a way for their humanoid robot to mirror arm motions
 \end{itemize}
 }
 
 \CVItem{08/15--05/18, \textit{Research Assistant}, University of Michigan}{
 \begin{itemize}
-	\item Implemented a fast 2D rigid body simulator in C++.
-	\item Used the simulator to tune a controller for a bipedal robot.
+	\item Implemented a fast 2D rigid body simulator in C++
+	\item Used the simulator to tune a controller for a bipedal robot
 \end{itemize}
 }
 
@@ -119,8 +129,8 @@ San Francisco, CA\\ % Address 2
 
 \CVItem{03-14--05/20, \textit{Podcast Director}, Robohub}{
 \begin{itemize}
-	\item Led an international team in publishing 160 podcast interviews.
-	\item Raised donations of around 20k USD.
+	\item Led an international team of 15 people in publishing 160 podcast episodes
+	\item Raised donations of around 20k USD
 \end{itemize}
 }
 
@@ -138,14 +148,14 @@ San Francisco, CA\\ % Address 2
 
 \CVItem{Programming}
 {\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-\bluebullet Python &  \bluebullet C/C++ & \bluebullet Javascript \\
+\bluebullet Python &  \bluebullet C/C++ & \bluebullet Javascript/Typescript \\
 \end{tabular}}
 
 %------------------------------------------------
 
 \CVItem{Computer Software}
 {\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
- \bluebullet ROS &  \bluebullet Docker & \bluebullet Node.js\\
+ \bluebullet ROS 1~\&~2&  \bluebullet Docker & \bluebullet Node.js\\
 \end{tabular}}
 
 %------------------------------------------------
